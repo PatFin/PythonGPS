@@ -42,7 +42,7 @@ Toyama Kyoto
 
 ### Usage
 
-o run the program, use the following command: `python bfs.py <graph input file>`
+To run the program, use the following command: `python bfs.py <graph input file>`
 
 The program will parse the given file and ask for a Start/Goal pair.
 The program will then return the distance between the cities and the corresponding path.
@@ -80,6 +80,8 @@ Retrieved Kyoto
 Distance between Tokyo and Kyoto: 42 hops
 Path:  ['Tokyo', 'Paris', 'Kyoto']
 ```
+
+_Note that the algorithm is not implemented and that the actual answer may differ than what is displayed above._
 
 ## Dijkstra
 
@@ -146,7 +148,7 @@ Distance between Tokyo and Kyoto: 42
 Path:  ['Tokyo', 'Paris', 'Kyoto']
 ```
 
-_Note that the Dijkstra algorithm is not implemented and that the actual answer may differ._
+_Note that the algorithm is not implemented and that the actual answer may differ than what is displayed above._
 
 ## A*
 
