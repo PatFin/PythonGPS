@@ -1,0 +1,13 @@
+6 6
+Tokyo 35.6895 139.6917
+Kyoto 35.0116 135.7681
+Niigata 37.9162 139.0364
+Shizuoka 34.9756 138.3828
+Nagoya 35.1815 136.9066
+Toyama 36.6959 137.2137
+Tokyo Niigata 335
+Tokyo Shizuoka 174
+Shizuoka Nagoya 176
+Nagoya Kyoto 195
+Toyama Niigata 215
+Toyama Kyoto 296

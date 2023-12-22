@@ -1,0 +1,13 @@
+6 6
+Tokyo
+Kyoto
+Niigata
+Shizuoka
+Nagoya
+Toyama
+Tokyo Niigata
+Tokyo Shizuoka
+Shizuoka Nagoya
+Nagoya Kyoto
+Toyama Niigata
+Toyama Kyoto
