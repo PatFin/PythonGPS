@@ -45,17 +45,19 @@ def parse_input(input_text):
         graph[city1][city2] = distance
         graph[city2][city1] = distance
 
-    return citiesNb, roadNb, graph
+    return citiesNb, roadNb, cities, graph
 
 
-def astart(graph, start, goal):
+def astar(cities, graph, start, goal):
     print(f"Computing distance and path from {start} to {goal}")
 
     # TODO implement A* algorithm and compute path from `start` to `goal`
 
+    # Accessing the GPS coordinates of a city
+    print(f"GPS coordinates of {goal} are {cities[goal][0]}:{cities[goal][1]}")
+
     # Example of accessing the roads that a city is connected to:
     print(f"Connected roads for {start}:")
-    
     # Iterate over connected cities and distances
     for neighbor, distance in graph[start].items():
         print(f"\tRoad to {neighbor} with distance {distance}")
@@ -83,7 +85,7 @@ def main(filename):
     with open(filename, 'r') as file:
         input_text = file.read()
 
-    A, B, graph = parse_input(input_text)
+    A, B, cities, graph = parse_input(input_text)
     print(f"Nb Cities: {A}, Nb Roads: {B}")
     print("Graph:", graph)
 
@@ -99,7 +101,7 @@ def main(filename):
         sys.exit()
 
     # Call Dijkstra to compute shortest path
-    distance, path = astar(graph, start, goal)
+    distance, path = astar(cities, graph, start, goal)
 
     print(f"Distance between {start} and {goal}: {distance}km")
     print(f"Path: ", path)
